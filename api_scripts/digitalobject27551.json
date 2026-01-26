@@ -1,0 +1,95 @@
+{
+    "classifications": [],
+    "collection": [
+        {
+            "ref": "/repositories/2/resources/228"
+        }
+    ],
+    "create_time": "2023-07-22T00:16:41Z",
+    "created_by": "distillery",
+    "dates": [],
+    "digital_object_id": "PP60_v01_1972-1988",
+    "digital_object_type": "still_image",
+    "extents": [],
+    "external_documents": [],
+    "external_ids": [],
+    "file_versions": [
+        {
+            "caption": "60-Inch Telescope Photographic Plate Logbook 1 (PR)",
+            "create_time": "2023-11-10T20:47:27Z",
+            "created_by": "automaton",
+            "file_uri": "https://img.archives.caltech.edu/iiif/2/collections/Palomar/PP60_v01_1972-1988/PP60_v01_1972-1988_C/full/200,/0/default.jpg",
+            "identifier": "499860",
+            "is_representative": true,
+            "jsonmodel_type": "file_version",
+            "last_modified_by": "automaton",
+            "link_uri": "https://digital.archives.caltech.edu/collections/Palomar/PP60_v01_1972-1988",
+            "lock_version": 0,
+            "publish": true,
+            "system_mtime": "2023-11-10T20:47:27Z",
+            "use_statement": "image-thumbnail",
+            "user_mtime": "2023-11-10T20:47:27Z",
+            "xlink_show_attribute": "embed"
+        },
+        {
+            "caption": "60-Inch Telescope Photographic Plate Logbook 1 (PR) still image",
+            "create_time": "2023-11-10T20:47:27Z",
+            "created_by": "automaton",
+            "file_uri": "https://digital.archives.caltech.edu/collections/Palomar/PP60_v01_1972-1988",
+            "identifier": "499861",
+            "is_representative": false,
+            "jsonmodel_type": "file_version",
+            "last_modified_by": "automaton",
+            "lock_version": 0,
+            "publish": true,
+            "system_mtime": "2023-11-10T20:47:27Z",
+            "user_mtime": "2023-11-10T20:47:27Z"
+        }
+    ],
+    "is_slug_auto": true,
+    "jsonmodel_type": "digital_object",
+    "lang_materials": [],
+    "last_modified_by": "automaton",
+    "linked_agents": [],
+    "linked_events": [],
+    "linked_instances": [
+        {
+            "ref": "/repositories/2/archival_objects/123296"
+        }
+    ],
+    "lock_version": 5,
+    "metadata_rights_declarations": [],
+    "notes": [],
+    "publish": true,
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "representative_file_version": {
+        "caption": "60-Inch Telescope Photographic Plate Logbook 1 (PR)",
+        "create_time": "2023-11-10T20:47:27Z",
+        "created_by": "automaton",
+        "file_uri": "https://img.archives.caltech.edu/iiif/2/collections/Palomar/PP60_v01_1972-1988/PP60_v01_1972-1988_C/full/200,/0/default.jpg",
+        "identifier": "499860",
+        "is_representative": true,
+        "jsonmodel_type": "file_version",
+        "last_modified_by": "automaton",
+        "link_uri": "https://digital.archives.caltech.edu/collections/Palomar/PP60_v01_1972-1988",
+        "lock_version": 0,
+        "publish": true,
+        "system_mtime": "2023-11-10T20:47:27Z",
+        "use_statement": "image-thumbnail",
+        "user_mtime": "2023-11-10T20:47:27Z",
+        "xlink_show_attribute": "embed"
+    },
+    "restrictions": false,
+    "rights_statements": [],
+    "subjects": [],
+    "suppressed": false,
+    "system_mtime": "2023-11-10T20:47:27Z",
+    "title": "60-Inch Telescope Photographic Plate Logbook 1 (PR)",
+    "tree": {
+        "ref": "/repositories/2/digital_objects/27551/tree"
+    },
+    "uri": "/repositories/2/digital_objects/27551",
+    "user_mtime": "2023-11-10T20:47:27Z"
+}

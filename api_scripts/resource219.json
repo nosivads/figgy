@@ -1,0 +1,146 @@
+{
+    "classifications": [],
+    "create_time": "2021-11-23T17:55:09Z",
+    "created_by": "pneder",
+    "dates": [
+        {
+            "begin": "1920",
+            "calendar": "gregorian",
+            "create_time": "2023-09-28T19:32:42Z",
+            "created_by": "pneder",
+            "date_type": "single",
+            "era": "ce",
+            "expression": "1920-",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "pneder",
+            "lock_version": 0,
+            "system_mtime": "2023-09-28T19:32:42Z",
+            "user_mtime": "2023-09-28T19:32:42Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "Photographs",
+    "extents": [
+        {
+            "create_time": "2023-09-28T19:32:42Z",
+            "created_by": "pneder",
+            "extent_type": "photographs",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "pneder",
+            "lock_version": 0,
+            "number": "10000+",
+            "portion": "whole",
+            "system_mtime": "2023-09-28T19:32:42Z",
+            "user_mtime": "2023-09-28T19:32:42Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [],
+    "finding_aid_filing_title": "Caltech Images Collection",
+    "finding_aid_language": "eng",
+    "finding_aid_script": "Latn",
+    "finding_aid_title": "Guide to Caltech Images Collection",
+    "id_0": "Images",
+    "import_previous_arks": [],
+    "instances": [],
+    "is_finding_aid_status_published": true,
+    "is_slug_auto": false,
+    "jsonmodel_type": "resource",
+    "lang_materials": [
+        {
+            "create_time": "2023-09-28T19:32:42Z",
+            "created_by": "pneder",
+            "jsonmodel_type": "lang_material",
+            "language_and_script": {
+                "create_time": "2023-09-28T19:32:42Z",
+                "created_by": "pneder",
+                "jsonmodel_type": "language_and_script",
+                "language": "eng",
+                "last_modified_by": "pneder",
+                "lock_version": 0,
+                "script": "Latn",
+                "system_mtime": "2023-09-28T19:32:42Z",
+                "user_mtime": "2023-09-28T19:32:42Z"
+            },
+            "last_modified_by": "pneder",
+            "lock_version": 0,
+            "notes": [],
+            "system_mtime": "2023-09-28T19:32:42Z",
+            "user_mtime": "2023-09-28T19:32:42Z"
+        }
+    ],
+    "last_modified_by": "pneder",
+    "level": "collection",
+    "linked_agents": [],
+    "linked_events": [],
+    "lock_version": 9,
+    "metadata_rights_declarations": [],
+    "notes": [
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "75a788168389507ae1a9e6a7f19d63c0",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Caltech Images is a collection of over ten thousand images representing Caltech's history and the people who have contributed to the Caltech story. It includes historic and contemporary photographs of people and places, reproductions of historic scientific artifacts and art, and illustrations drawn from Caltech's rare book collection in the history of science and technology.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "scopecontent"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "06cdcb4f7cb9dbcbd2a80804b6630892",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "For more information consult the <extref xlink:type=\"simple\" xlink:href=\"https://library.caltech.edu/archives/access/reproductions\"> Caltech Archives Reproduction and Permissions</extref>. ",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "accessrestrict"
+        }
+    ],
+    "publish": true,
+    "related_accessions": [],
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "representative_file_version": {
+        "caption": "Throop Hall",
+        "create_time": "2023-12-12T03:12:19Z",
+        "created_by": "automaton",
+        "derived_from": "/repositories/2/digital_objects/25991",
+        "file_uri": "https://img.archives.caltech.edu/iiif/2/collections/Images/40.4-92/40.4-92/full/200,/0/default.webp",
+        "identifier": "574602",
+        "is_representative": true,
+        "jsonmodel_type": "file_version",
+        "last_modified_by": "automaton",
+        "link_uri": "https://digital.archives.caltech.edu/collections/Images/40.4-92",
+        "lock_version": 0,
+        "publish": true,
+        "system_mtime": "2023-12-12T03:12:19Z",
+        "use_statement": "image-thumbnail",
+        "user_mtime": "2023-12-12T03:12:19Z",
+        "xlink_show_attribute": "embed"
+    },
+    "resource_type": "collection",
+    "restrictions": false,
+    "revision_statements": [],
+    "rights_statements": [],
+    "subjects": [],
+    "suppressed": false,
+    "system_mtime": "2024-12-11T23:02:56Z",
+    "title": "Caltech Images Collection",
+    "tree": {
+        "ref": "/repositories/2/resources/219/tree"
+    },
+    "uri": "/repositories/2/resources/219",
+    "user_mtime": "2023-09-28T19:32:42Z"
+}

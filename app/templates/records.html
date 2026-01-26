@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>List Record IDs</h3>
+
+{% if not ids %}
+
+<p>Select a record type:</p>
+
+<form action="{{ url_for('oaidp.recordidlist') }}" method="POST">
+
+    <table>
+        <tr>
+            <td align="right"><label for="recordtype">Record type:</label></td>
+            <td>
+                <select name="recordtype" id="recordtype">
+                    <option value="resources">Resources</option>
+                    <option value="accessions">Accessions</option>
+                    <option value="digital_objects">Digital objects</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    
+    <br>
+    <input type="submit" value="Submit">
+    
+</form>
+
+{% else %}
+<p>Record IDs for {{ recordtype }}:</p>
+
+<p>
+    {% for id in ids %}
+        <a href="https://collections.archives.caltech.edu/repositories/2/{{ recordtype }}/{{ id[0] }}">{{ id[0] }}</a>{% if not loop.last %}, {% endif %}
+    {% endfor %}
+</p>   
+
+{% endif %}
+
+<h3>Records</h3>
+
+{% if error %}
+    <p><strong>{{ error }}</strong></p>
+{% endif %}
+
+<form action="{{ url_for('oaidp.records') }}" method="POST">
+
+<table>
+        <tr>
+            <td align="right"><label for="recordtype">Record type:</label></td>
+            <td>
+                <select name="recordtype" id="recordtype">
+                    <option value="resources">Resources</option>
+                    <option value="accessions">Accessions</option>
+                    <option value="archival_objects">Archival objects</option>
+                    <option value="digital_objects">Digital objects</option>
+                    <option value="subjects">Subjects</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td align="right"><label for="saveas">Save as:</label></td>
+            <td>
+                <select name="saveas" id="saveas">
+                    <option value="json">Display JSON</option>
+                    <option value="jsonfile">Save JSON</option>
+                    <option value="csv">Save CSV</option>
+                    <option value="subj">Subjects</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td align="right"><label for="recordid">Record ID:</label></td>
+            <td><input type="text" id="recordid" name="recordid"></td>
+        </tr>
+        <tr>
+            <td align="right"><label for="resolve_links">Include links (if applicable):</label></td>
+            <td>
+                <input type="checkbox" id="ancestors" name="ancestors" value="yes"> Ancestors<br>
+                <input type="checkbox" id="digital_object" name="digital_object" value="yes"> Digital Object<br>
+                <input type="checkbox" id="linked_agents" name="linked_agents" value="yes"> Linked Agents<br>
+                <input type="checkbox" id="repository" name="repository" value="yes"> Repository<br>
+                <input type="checkbox" id="subjects" name="subjects" value="yes"> Subjects<br>
+                <input type="checkbox" id="top_container" name="top_container" value="yes"> Top Container
+            </td>
+        </tr>
+    </table>
+    
+    <br>
+    <input type="submit" value="Submit">
+
+</form>
+
+{% if subjects %}
+    <h3>Subjects</h3>
+
+        <p>Subjects for <strong>{{ recordtype }} {{ recordid }}</strong>:</p>
+
+    <ul>
+        {% for subject in subjects %}
+            <li>{{ subject }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+{% if extents %}
+<h3>Extents</h3>
+
+<p>Extents for <strong>{{ recordtype }} {{ recordid }}</strong>:</p>
+
+<ul>
+    {% for extent in extents %}
+    <li>{{ extent }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+{% if dates %}
+<h3>Dates</h3>
+
+<p>Dates for <strong>{{ recordtype }} {{ recordid }}</strong>:</p>
+
+<ul>
+    {% for date in dates %}
+    <li>{{ date }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>CSV Download</h3>
+
+<p>Select either resources or accessions records for download.</p>
+
+<p>OPTIONAL: For the record type selected, choose the fields to include. If no boxes are checked then ALL listed fields will be included.</p>
+
+<p>Be patient. Gathering resources data takes just a few seconds, gathering accessions data takes about 20 seconds, and gathering data for digital objects takes about 45 seconds.</p>
+
+<form action="{{ url_for('oaidp.reports') }}" method="POST">
+
+    <button type="submit">Gather data and save file</button><br><br>
+
+    {% for category in fieldnames %}
+
+        <input type="radio" id="{{ category }}" name="category" value="{{ category }}"><label for="{{ category }}">{{ category.capitalize() }}</label><br>
+
+        {% for field in fieldnames[category] %}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input name="include" id="include" type="checkbox" value="{{ field }}">{{ field }}<br>
+        {% endfor %}
+    
+    {% endfor %}
+
+</form>
+
+{% endblock %}

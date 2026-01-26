@@ -1,0 +1,200 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>Collections</h3>
+
+<p>
+    Data is updated nightly from ArchivesSpace at 1am. 
+    Changes will be reflected in the table below, and in the results of Data Provider queries.
+</p>
+
+<p>
+    Information about each collection (set) is available in ArchivesSpace: click the link in the 'Record ID' column.
+</p>
+
+<p>
+    The links in the 'List Records' column generate OAI-PMH ListRecords requests for 
+    each collection.
+</p>
+{% if g.user and g.auth %}
+<p>
+    Set IDs have the following format: &lt;record type&gt;_&lt;record ID&gt;. For example, the set ID for the Caltech
+    Images Collection is resource_219.
+</p>
+
+<p>
+    Both resource and accession records with the following attributes can be published through the Data Provider:
+</p>
+<ul>
+    <li>Archival objects (record) must be published and not suppressed</li>
+    <li>Digital objects (record) must be published and not suppressed</li>
+    <li>The file versions must be published</li>
+</ul>
+<p>
+    The list of resources and accessions in the table below includes all those with <u>published digital records</u>.
+    The statistics represent numbers of unique <u>published</u> archival and digital objects.
+    The following categories of digital content are omitted:
+</p>
+<ul>
+    <li>Thumbnails, redirects, and links that duplicate links to the Library resolver. (Resolver links are preferred.)</li>
+    <li>Unpublished file versions.</li>
+    <li>Links that are not public URLs, such as Google Drive, local drives, SAN addresses, etc.</li>
+</ul>
+</p>
+<p>
+    Examples of edits in ArchivesSpace that will change collection data and DP responses include:
+</p>
+<ul>
+    <li>Adding/removing digital content in collections</li>
+    <li>Changing publication or suppressed status of collections or digital objects</li>
+    <li>Editing archival or digital object metadata</li>
+</ul>
+<p>
+    Key to the table columns:
+</p>
+<ol>
+    <li>Update OAI Data Provider: Check boxes to set active collections. Click the column header to update.</li>
+    <li>Record type: The type of collection to which the digital objects belong.</li>
+    <li>Record ID: The number that ArchivesSpace assigns to a resource or accession. 
+        Although these are unique within each category, the same number can be used in both categories.</li>
+    <li>Title of resource or accession.</li>
+    <li>Last edit: The date of the most recently edited record in a collection. 
+        A recent date may indicate that a collection needs to be reharvested.</li>
+    <li>Archival objects: The number of published archival objects in a collection with related published digital objects.</li>
+    <li>Digital objects: The number of published digital objects associated with those archival objects.</li>
+    <li>List records: Links to the OAI List Records request for the collection.</li>
+    <li>Digital objects hosted by the Library, either directly (digital.archives.caltech.edu) or through the resolver (resolver.caltech.edu). 
+        If there is both a direct link and a resolver link, the resolver is preferred and the direct link is omitted from the record.</li>
+    <li>Digital objects hosted by the Internet Archive (archive.org).</li>
+    <li>Digital objects hosted by YouTube (youtube.com, youtu.be).</li>
+    <li>Other URLs.</li>
+</ol>
+
+<table>
+    <tr>
+        <td align="right"><strong>Data last updated from ArchivesSpace:</strong></td><td>{{ dt_xml }}</td>
+    </tr>
+    <tr>
+        <td align="right"><strong>Collection selection last updated:</strong></td><td>{{ dt_col }}</td>
+    </tr>
+</table>
+{% endif %}
+
+<br/>
+
+{% if g.user and g.auth %}<form action="{{ url_for('oaidp.collections3') }}" method="POST">{% endif %}
+<table>
+<tr>
+    {% if g.user and g.auth %}
+    <th rowspan="2"><button type="submit">Update OAI<br/>Data Provider</button></th>
+    <th rowspan="2">Collection Type</th>
+    {% endif %}
+    {% if g.user and g.auth %}<th rowspan="2">{% else %}<th>{% endif %}Record ID</th>
+    {% if g.user and g.auth %}<th rowspan="2">{% else %}<th>{% endif %}Title</th>
+    {% if g.user and g.auth %}<th rowspan="2">{% else %}<th>{% endif %}Last edit</th>
+    {% if g.user and g.auth %}<th rowspan="2">{% else %}<th>{% endif %}Archival Objects</th>
+    {% if g.user and g.auth %}<th rowspan="2">{% else %}<th>{% endif %}Digital Objects</th>
+    {% if g.user and g.auth %}<th rowspan="2">{% else %}<th>{% endif %}List Records</th>
+    {% if g.user and g.auth %}<th colspan="4">Host/Link domain</th><th colspan="5">Type</th>
+                    {% else %}<th>Type: StillImage</th><th>Type: Text</th>{% endif %}
+</tr>
+{% if g.user and g.auth %}
+<tr>
+    <th>Caltech Library</th>
+    <th>Internet Archive</th>
+    <th>YouTube</th>
+    <th>Other</th>
+    <th>Still Image</th>
+    <th>Text</th>
+    <th>Moving Image</th>
+    <th>Sound</th>
+    <th>Other</th>
+</tr>
+{% endif %}
+
+{% set ns = namespace(
+    tot_aocount = 0,
+    tot_docount = 0,
+    tot_clibrary = 0,
+    tot_iarchive = 0,
+    tot_youtube = 0,
+    tot_other = 0,
+    tot_stillimage = 0,
+    tot_text = 0,
+    tot_movingimage = 0,
+    tot_sound = 0,
+    tot_othertype = 0
+    ) %}
+
+{% for coll in output[3] %}
+    {% if coll[8] or (g.user and g.auth) %}
+    <tr>
+        
+        {% if g.user and g.auth %}
+        <td align="center">    
+            <input name="include" id="include" type="checkbox" value="{{ coll[0] }}"{% if coll[8] %} checked {% endif %}>
+        </td>
+        <td>{{ coll[9] }}</td>
+        {% endif %}
+        <td><a href="{{ url }}{{ coll[9] }}s/{{ coll[0] }}">{{ coll[0] }}</a></td>
+        <td><strong>{{ coll[1] }}</strong></td>
+        <td>{{ coll[10] }}</td>
+        <td align="right">{{ coll[2] }}</td> {% set ns.tot_aocount = ns.tot_aocount + coll[2] %}
+        <td align="right">{{ coll[3] }}</td> {% set ns.tot_docount = ns.tot_docount + coll[3] %}
+        <td align="center">
+            {% if (g.user and g.auth) or coll[8] %}
+            <a href="oai?verb=ListRecords&set={{ coll[9] }}_{{ coll[0] }}"><i class="fas fa-solid fa-link"></i></a>
+            {% endif %}
+        </td>
+        {% if g.user and g.auth %}
+        <td align="right">{{ coll[4] }}</td> {% set ns.tot_clibrary = ns.tot_clibrary + coll[4] %}
+        <td align="right">{{ coll[5] }}</td> {% set ns.tot_iarchive = ns.tot_iarchive + coll[5] %}
+        <td align="right">{{ coll[6] }}</td> {% set ns.tot_youtube = ns.tot_youtube + coll[6] %}
+        <td align="right">{{ coll[7] }}</td> {% set ns.tot_other = ns.tot_other + coll[7] %}
+        {% endif %}
+        <td align="right">{{ coll[11] }}</td> {% set ns.tot_stillimage = ns.tot_stillimage + coll[11] %}
+        <td align="right">{{ coll[12] }}</td> {% set ns.tot_text = ns.tot_text + coll[12] %}
+        {% if g.user and g.auth %}
+        <td align="right">{{ coll[13] }}</td> {% set ns.tot_movingimage = ns.tot_movingimage + coll[13] %}
+        <td align="right">{{ coll[14] }}</td> {% set ns.tot_sound = ns.tot_sound + coll[14] %}
+        <td align="right">{{ coll[15] }}</td> {% set ns.tot_othertype = ns.tot_othertype + coll[15] %}
+        {% endif %}
+    </tr>
+    {% endif %}
+{% endfor %}
+<tr>
+    {% if g.user and g.auth %}
+    <th align="right" colspan="5">Totals</th>
+    {% else %}
+    <th align="right" colspan="3">Totals</th>
+    {% endif %}
+    <th align="right">{{ ns.tot_aocount }}</th>
+    <th align="right">{{ ns.tot_docount }}</th>
+    <th></th>
+    {% if g.user and g.auth %}
+    <th align="right">{{ ns.tot_clibrary }}</th>
+    <th align="right">{{ ns.tot_iarchive }}</th>
+    <th align="right">{{ ns.tot_youtube }}</th>
+    <th align="right">{{ ns.tot_other }}</th>
+    {% endif %}
+    <th align="right">{{ ns.tot_stillimage }}</th>
+    <th align="right">{{ ns.tot_text }}</th>
+    {% if g.user and g.auth %}
+    <th align="right">{{ ns.tot_movingimage }}</th>
+    <th align="right">{{ ns.tot_sound }}</th>
+    <th align="right">{{ ns.tot_othertype }}</th>
+    {% endif %}
+</tr>
+</table>
+</form>
+
+{% if digitalobject_count %}
+    <p>Total number of digital objects: {{ digitalobject_count }}</p>
+{% endif %}
+
+{% if archivalobject_count %}
+    <p>Total number of linked archival objects: {{ archivalobject_count }}</p>
+{% endif %}
+
+{% endblock %}

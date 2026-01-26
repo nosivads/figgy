@@ -1,0 +1,278 @@
+{
+    "classifications": [],
+    "create_time": "2018-02-01T19:16:35Z",
+    "created_by": "pneder",
+    "dates": [
+        {
+            "begin": "1935",
+            "create_time": "2018-02-15T22:55:50Z",
+            "created_by": "pneder",
+            "date_type": "inclusive",
+            "end": "1996",
+            "expression": "1935-1996, bulk 1935-1948",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "pneder",
+            "lock_version": 0,
+            "system_mtime": "2018-02-15T22:55:50Z",
+            "user_mtime": "2018-02-15T22:55:50Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "caltech_10001media(Palomar).xml",
+    "ead_location": "http://www.oac.cdlib.org/findaid/ark:/13030/kt8z09s22j/",
+    "extents": [
+        {
+            "container_summary": "10 black and white 16mm film reels; 43 color 16mm film reels; 1 black and white 35mm reel; 19 video tapes and 1 DVD (VHS, Beta SP, Beta PAL, DVD formats)",
+            "create_time": "2018-02-15T22:55:50Z",
+            "created_by": "pneder",
+            "extent_type": "unspecified containers",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "pneder",
+            "lock_version": 0,
+            "number": "1",
+            "portion": "whole",
+            "system_mtime": "2018-02-15T22:55:50Z",
+            "user_mtime": "2018-02-15T22:55:50Z"
+        }
+    ],
+    "external_documents": [
+        {
+            "create_time": "2018-02-15T22:55:50Z",
+            "created_by": "pneder",
+            "jsonmodel_type": "external_document",
+            "last_modified_by": "pneder",
+            "location": "https://archive.org/details/caltech?and%5B%5D=palomar",
+            "lock_version": 0,
+            "publish": true,
+            "system_mtime": "2018-02-15T22:55:50Z",
+            "title": "Palomar Online Items",
+            "user_mtime": "2018-02-15T22:55:50Z"
+        }
+    ],
+    "external_ids": [],
+    "finding_aid_author": "Processed by Mariella Soprano.",
+    "finding_aid_date": "2012",
+    "finding_aid_description_rules": "dacs",
+    "finding_aid_filing_title": "Palomar Observatory Motion Pictures Collection",
+    "finding_aid_language": "und",
+    "finding_aid_script": "Zyyy",
+    "finding_aid_status": "completed",
+    "finding_aid_title": "Finding Aid for the Palomar Observatory Motion Pictures Collection, 1935-1996, bulk 1935-1948",
+    "id_0": "10001-Media",
+    "import_previous_arks": [],
+    "instances": [],
+    "is_finding_aid_status_published": true,
+    "is_slug_auto": false,
+    "jsonmodel_type": "resource",
+    "lang_materials": [
+        {
+            "create_time": "2018-02-01T19:16:35Z",
+            "jsonmodel_type": "lang_material",
+            "language_and_script": {
+                "create_time": "2018-02-01T19:16:35Z",
+                "jsonmodel_type": "language_and_script",
+                "language": "eng",
+                "lock_version": 0,
+                "system_mtime": "2018-08-02T22:32:56Z",
+                "user_mtime": "2018-02-15T22:55:50Z"
+            },
+            "lock_version": 0,
+            "notes": [],
+            "system_mtime": "2018-08-02T22:32:56Z",
+            "user_mtime": "2018-02-15T22:55:50Z"
+        },
+        {
+            "create_time": "2018-02-15T22:55:50Z",
+            "jsonmodel_type": "lang_material",
+            "lock_version": 0,
+            "notes": [
+                {
+                    "content": [
+                        "English"
+                    ],
+                    "jsonmodel_type": "note_langmaterial",
+                    "persistent_id": "2b629ef66c3384380850ad8066c24d37",
+                    "publish": true,
+                    "type": "langmaterial"
+                }
+            ],
+            "system_mtime": "2018-02-15T22:55:50Z",
+            "user_mtime": "2018-02-15T22:55:50Z"
+        }
+    ],
+    "last_modified_by": "pneder",
+    "level": "collection",
+    "linked_agents": [
+        {
+            "is_primary": false,
+            "ref": "/agents/corporate_entities/48",
+            "role": "subject",
+            "terms": []
+        },
+        {
+            "is_primary": false,
+            "ref": "/agents/people/3395",
+            "role": "subject",
+            "terms": []
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 5,
+    "metadata_rights_declarations": [],
+    "notes": [
+        {
+            "content": [
+                "A collection of films showing the construction and operation of the 200-inch Hale Telescope at Palomar Observatory, Palomar Mountain, California. This instrument was the world's largest effective telescope for 45 years (1948-1993). The collection includes footage of the transportation, grinding and polishing of the 200-inch mirror on the campus of the California Institute of Technology. A small portion of this material has been transferred to video tape and digitized from tape to DVD."
+            ],
+            "jsonmodel_type": "note_singlepart",
+            "persistent_id": "2547e0ccae2ad4875b06e0bce8701898",
+            "publish": true,
+            "type": "abstract"
+        },
+        {
+            "content": [
+                "Archives, California Institute of Technology."
+            ],
+            "jsonmodel_type": "note_singlepart",
+            "persistent_id": "0336cf714eb6fb66b0cf1f27f31a817f",
+            "publish": true,
+            "type": "physloc"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Access",
+            "persistent_id": "328a545bff0aa0c64c86f6ce2864e8a6",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "The collection is open for research. Researchers must apply in writing for access.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "accessrestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Publication Rights",
+            "persistent_id": "481762465e392876d8420af48c52b0de",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "Copyright may not have been assigned to the California Institute of Technology Archives. All requests for permission to publish or quote from manuscripts must be submitted in writing to the Caltech Archivist. Permission for publication is given on behalf of the California Institute of Technology Archives as the owner of the physical items and, unless explicitly stated otherwise, is not intended to include or imply permission of the copyright holder, which must also be obtained by the reader.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "userestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Preferred Citation",
+            "persistent_id": "df9e17a5cf43d681ec3dfe18a882d2a7",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "[Identification of item], Palomar Observatory motion pictures collection, 10001-Media, Caltech Archives, California Institute of Technology.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "prefercite"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Acquisition Information",
+            "persistent_id": "2c9315d965db763aefeb1eb1e186bb4b",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "A number of the reels were placed in the Caltech Archives at different times by Robert J. Brucato, an administrator of the Palomar Observatory from 1974 to 2004. The provenance of the remaining film is unknown. Some video tapes and all digital copies in the collection were created by the Caltech Archives.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "acqinfo"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Historical Note",
+            "persistent_id": "1c7d83c9cbf31d8a182f6fabb4f4e070",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Palomar Observatory is located in San Diego County, California, 90 miles (140 km) southeast of Pasadena's Mount Wilson Observatory, in the Palomar Mountain Range. At approximately 5,570 feet (1,700 m) elevation, it is owned and operated by the California Institute of Technology. Research time is granted to Caltech's faculty and staff members and to research partners, which include the Jet Propulsion Laboratory and Cornell University. The 200-inch Hale reflecting telescope is the principal instrument at the Palomar Observatory. It was built by Caltech with a 6-million dollar grant from the Rockefeller Foundation. The historic 200-inch mirror was manufactured using a Pyrex blank by Corning Glass Works, in Corning, New York, and was shipped by rail to Pasadena for grinding and polishing. It was the vision and effort of the astronomer George Ellery Hale that caused the project to be funded and to go forward. The building of the 200-inch telescope was easily the most famous scientific undertaking of the 1930s. From the beginning, everyone associated with the project realized that the work must be done right or not at all. Every task associated with the Palomar project required a considerable extension of the technology of the day. In an article in the April 1928 issue of Harper's Magazine, George Hale set forth the case for the building of what was to become the 200-inch Palomar reflector. The purpose of this article was to inform the American public about his proposal to construct the largest telescope in the world to answer questions relating to the fundamental nature of the universe. Hale hoped that the American people would understand and support his project. George Ellery Hale died in 1938 and did not live to see the completion of his last and biggest telescope. In June 1948 the 200-inch reflector was dedicated to his memory. The telescope (the largest in the world at that time) saw first light on January 26, 1949, targeting NGC 2261. Russell W. Porter was primarily responsible for the striking Art Deco architecture of the Observatory's buildings, most notably the dome of the 200-inch Hale telescope. Porter was also responsible for much of the technical design of the telescope, producing a series of remarkable cross-section engineering drawings that are considered among the finest examples of such work. Porter worked on the designs in collaboration with many engineers and Caltech committee members. The iconic, gleaming white building on Palomar Mountain that houses the 200-inch Hale telescope is considered by many to be \"The Cathedral of Astronomy.\"",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "bioghist"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Scope and Content",
+            "persistent_id": "11342568b541899baa55393ae7dcde29",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "The collection contains raw and edited film footage, some duplicated on video tape or transferred to DVD, of the construction and operation of the Palomar Observatory. The total number of items is 53 16mm reels, 1 35mm reel, 19 video tapes and 1 DVD. The earliest of these recordings are in black and white and without sound. Later footage is in color with audio. Some material appears to be raw footage, and some is clearly edited. Included in the collection are two feature-length productions prepared for public viewing: The Story of Palomar (1948), and The Universe From Palomar (1967). Both of these are in color and with sound.\n\n There is notable duplication and overlap between footage segments in this collection. It has not been possible to identify and account for all elements of duplication or overlap. Item-level description notes provide some useful details about the relationships between individual reels throughout the collection.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "scopecontent"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Related Material",
+            "persistent_id": "92193d8ebdd5b35d94d358d6ea697365",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Papers of John A. Anderson; Astronomy Department Files; Papers of the Astrophysics Archive 1928-1954; Papers of Ira Sprague Bowen; Papers of Jesse Leornard Greenstein; Papers of George Ellery Hale; Palomar Observatory Records; Russell Porter's Sketch studies; The Drawings of Russell Porter; Papers of Bruce H. Rule.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "relatedmaterial"
+        }
+    ],
+    "publish": true,
+    "related_accessions": [],
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "resource_type": "collection",
+    "restrictions": false,
+    "revision_statements": [],
+    "rights_statements": [],
+    "subjects": [
+        {
+            "ref": "/subjects/755"
+        },
+        {
+            "ref": "/subjects/386"
+        },
+        {
+            "ref": "/subjects/388"
+        },
+        {
+            "ref": "/subjects/389"
+        }
+    ],
+    "suppressed": false,
+    "system_mtime": "2024-08-26T18:42:37Z",
+    "title": "Palomar Observatory Motion Pictures Collection",
+    "tree": {
+        "ref": "/repositories/2/resources/49/tree"
+    },
+    "uri": "/repositories/2/resources/49",
+    "user_mtime": "2018-02-15T22:55:50Z"
+}

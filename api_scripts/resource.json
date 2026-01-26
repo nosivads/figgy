@@ -1,0 +1,106 @@
+{
+    "classifications": [],
+    "create_time": "2022-02-09T21:37:02Z",
+    "created_by": "pcollopy",
+    "dates": [
+        {
+            "begin": "1936-09-05",
+            "create_time": "2023-05-19T17:11:17Z",
+            "created_by": "tkeswick",
+            "date_type": "inclusive",
+            "end": "2012-10-16",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "tkeswick",
+            "lock_version": 0,
+            "system_mtime": "2023-05-19T17:11:17Z",
+            "user_mtime": "2023-05-19T17:11:17Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "palomar",
+    "extents": [
+        {
+            "create_time": "2023-05-19T17:11:17Z",
+            "created_by": "tkeswick",
+            "extent_type": "books",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "tkeswick",
+            "lock_version": 0,
+            "number": "71",
+            "portion": "whole",
+            "system_mtime": "2023-05-19T17:11:17Z",
+            "user_mtime": "2023-05-19T17:11:17Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [],
+    "finding_aid_description_rules": "dacs",
+    "finding_aid_language": "eng",
+    "finding_aid_script": "Latn",
+    "id_0": "Palomar",
+    "import_previous_arks": [],
+    "instances": [],
+    "is_finding_aid_status_published": true,
+    "is_slug_auto": false,
+    "jsonmodel_type": "resource",
+    "lang_materials": [
+        {
+            "create_time": "2023-05-19T17:11:17Z",
+            "created_by": "tkeswick",
+            "jsonmodel_type": "lang_material",
+            "language_and_script": {
+                "create_time": "2023-05-19T17:11:17Z",
+                "created_by": "tkeswick",
+                "jsonmodel_type": "language_and_script",
+                "language": "eng",
+                "last_modified_by": "tkeswick",
+                "lock_version": 0,
+                "script": "Latn",
+                "system_mtime": "2023-05-19T17:11:17Z",
+                "user_mtime": "2023-05-19T17:11:17Z"
+            },
+            "last_modified_by": "tkeswick",
+            "lock_version": 0,
+            "notes": [],
+            "system_mtime": "2023-05-19T17:11:17Z",
+            "user_mtime": "2023-05-19T17:11:17Z"
+        }
+    ],
+    "last_modified_by": "tkeswick",
+    "level": "collection",
+    "linked_agents": [
+        {
+            "is_primary": false,
+            "ref": "/agents/corporate_entities/78",
+            "role": "creator",
+            "terms": []
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 5,
+    "metadata_rights_declarations": [],
+    "notes": [],
+    "publish": true,
+    "related_accessions": [],
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "resource_type": "records",
+    "restrictions": false,
+    "revision_statements": [],
+    "rights_statements": [],
+    "subjects": [
+        {
+            "ref": "/subjects/198"
+        }
+    ],
+    "suppressed": false,
+    "system_mtime": "2024-08-28T16:48:45Z",
+    "title": "Palomar Observatory Records",
+    "tree": {
+        "ref": "/repositories/2/resources/228/tree"
+    },
+    "uri": "/repositories/2/resources/228",
+    "user_mtime": "2023-05-19T17:11:17Z"
+}

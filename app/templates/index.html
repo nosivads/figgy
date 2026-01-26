@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>Introduction</h3>
+
+<p>This Data Provider allows external services to harvest metadata for digital collections hosted by Caltech Archives.
+    The DP adheres to the <a href='https://www.openarchives.org/pmh/'>Open Archives Initiative Protocol for Metadata Harvesting</a> (OAI-PMH)
+    and supports all the verbs (Identify, ListMetadataFormats, ListSets, ListIdentifiers, ListRecords, and GetRecord), resumption tokens, and sets.</p> 
+    
+<p>Only Dublin Core metadata is available at the current time.</p>
+
+<p>Sets correspond to the archival collections in the Caltech Archives.</p>
+    
+<p>Data is delivered from a static XML repository that is updated from ArchivesSpace daily, at 1am Pacific time.
+    Only collections and records with digital content accessible on the web are included.</p>
+
+<h3>Access</h3>    
+
+<p>The service is freely available. Any questions about this service should be directed to <a
+        href="mailto:archives@caltech.edu">archives@caltech.edu</a></p>
+
+<p>Access to the configuration section requires an Archives staff login.</p>
+
+<h3>DP Base URL</h3>
+
+<p>Harvesting queries are formed by adding OAI-PMH parameters to this base URL:</p>
+
+<ul>
+    <li><a href="oai">https://apps.library.caltech.edu/ead2dc/oai</a></li>
+</ul>
+
+<h3>Example queries:</h3>
+
+<ul>
+    <li><strong>Identify</strong>
+        <ul>
+            <li><a href="oai?verb=Identify">Identify</a></li>
+        </ul>
+    </li>
+    <li><strong>ListMetadataFormats</strong>
+        <ul>
+            <li><a href="oai?verb=ListMetadataFormats">ListMetadataFormats</a></li>
+            <li><a
+                    href="oai?verb=ListMetadataFormats&identifier=collections.archives.caltech.edu/repositories/2/archival_objects/106578">ListMetadataFormats&identifier=collections.archives.caltech.edu/repositories/2/archival_objects/106578</a>
+            </li>
+        </ul>
+    </li>
+    <li><strong>ListSets</strong>
+        <ul>
+            <li><a href="oai?verb=ListSets">ListSets</a>
+                <ul>
+                    <li>argument not supported: resumptionToken</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><strong>ListIdentifiers</strong>
+        <ul>
+            <li><a href="oai?verb=ListIdentifiers">ListIdentifiers</a></li>
+            <li><a href="oai?verb=ListIdentifiers&set=resource_30">ListIdentifiers&set=resource_30</a></li>
+            <li><a href="oai?verb=ListIdentifiers&set=resource_30&from=2025-01-01">ListIdentifiers&set=resource_30&from=2025-01-01</a>
+                <ul>
+                    <li>arguments supported: set, from, until, resumptionToken</li>
+                    <li>argument not supported: metadataPrefix</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><strong>ListRecords</strong>
+        <ul>
+            <li><a href="oai?verb=ListRecords">ListRecords</a></li>
+            <li><a href="oai?verb=ListRecords&set=resource_219">ListRecords&set=resource_219</a></li>
+            <li><a href="oai?verb=ListRecords&set=resource_30&from=2025-01-01">ListRecords&set=resource_30&from=2025-01-01</a>
+                <ul>
+                    <li>arguments supported: set, from, until, resumptionToken</li>
+                    <li>argument not supported: metadataPrefix</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><strong>GetRecord</strong>
+        <ul>
+            <li><a href="oai?verb=GetRecord&identifier=collections.archives.caltech.edu/repositories/2/archival_objects/106628">GetRecord&identifier=collections.archives.caltech.edu/repositories/2/archival_objects/106628</a>
+                <ul>
+                    <li>argument supported: identifier</li>
+                    <li>argument not supported: metadataPrefix</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<h3>Additional notes</h3>
+
+<ul>
+    <li><strong>Metadata</strong>
+        <ul>
+            <li>Dublin Core is the only metadata standard supported at this time. 
+                Additional metadata formats may be added in the future as the need arises.
+                Comments, advice and corrections about the metadata are welcome.
+            </li>
+        </ul>
+    </li>
+    <li><strong>Flow control</strong>
+        <ul>
+            <li>ListIdentifiers and ListRecords return batches of 250 records, with a resumption token.</li>
+            <li>Resumption tokens are valid indefinitely. Note, however, that <a
+                    href="http://www.openarchives.org/OAI/openarchivesprotocol.html#Idempotency">idempotency</a> <i class="fa-solid fa-arrow-up-right-from-square"></i> is not
+                guaranteed as the underlying data may change at any time.</li>
+        </ul>
+    </li>
+    <li><strong>Sets</strong>
+        <ul>
+            <li>Sets correspond to Caltech Archives collections. No other set specifications are supported at this time.</li>
+            <li>The set structure is flat, not hierarchical. i.e. There are no sets representing portions of collections.</li>
+            <li>All records belong to at least one set, so harvesting all sets will capture all records.</li>
+            <li>Records may belong to more than one set (i.e. collection).</li>
+        </ul>
+    </li>
+</ul>
+
+<p>Source code is available on GitHub <a href="https://github.com/caltechlibrary/ead2dc"><img width="20" height="20"
+            src="{{ url_for('static', filename='images/github.svg') }}"></a></p>
+
+<p><strong>For more information visit:</strong></p>
+
+<ul>
+    <li><a href="https://www.openarchives.org/OAI/openarchivesprotocol.html">OAI-PMH specifications</a> <i class="fa-solid fa-arrow-up-right-from-square"></i></li>
+    <li><a href="https://archives.caltech.edu">Caltech Archives website</a> <i class="fa-solid fa-arrow-up-right-from-square"></i></li>
+</ul>
+
+{% endblock %}

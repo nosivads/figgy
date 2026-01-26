@@ -1,0 +1,154 @@
+{
+    "classifications": [],
+    "collection": [
+        {
+            "ref": "/repositories/2/resources/197"
+        }
+    ],
+    "create_time": "2020-06-19T17:20:22Z",
+    "created_by": "pcollopy",
+    "dates": [],
+    "digital_object_id": "id267445d",
+    "digital_object_type": "still_image",
+    "extents": [],
+    "external_documents": [],
+    "external_ids": [],
+    "file_versions": [
+        {
+            "caption": "Black notebook no. 1, October 1961-March 1962",
+            "create_time": "2023-11-27T19:48:32Z",
+            "created_by": "automaton",
+            "file_uri": "https://img.archives.caltech.edu/iiif/2/collections/MacCreadyPB/MacCreadyPB_03_00_001_01/MacCreadyPB_03_00_001_01_0001/full/200,/0/default.webp",
+            "identifier": "506778",
+            "is_representative": true,
+            "jsonmodel_type": "file_version",
+            "last_modified_by": "automaton",
+            "link_uri": "https://digital.archives.caltech.edu/collections/MacCreadyPB/MacCreadyPB_03_00_001_01",
+            "lock_version": 0,
+            "publish": true,
+            "system_mtime": "2023-11-27T19:48:32Z",
+            "use_statement": "image-thumbnail",
+            "user_mtime": "2023-11-27T19:48:32Z",
+            "xlink_show_attribute": "embed"
+        },
+        {
+            "caption": "Black notebook no. 1, October 1961-March 1962 still image",
+            "create_time": "2023-11-27T19:48:32Z",
+            "created_by": "automaton",
+            "file_uri": "https://digital.archives.caltech.edu/collections/MacCreadyPB/MacCreadyPB_03_00_001_01",
+            "identifier": "506779",
+            "is_representative": false,
+            "jsonmodel_type": "file_version",
+            "last_modified_by": "automaton",
+            "lock_version": 0,
+            "publish": true,
+            "system_mtime": "2023-11-27T19:48:32Z",
+            "use_statement": "Web-Access",
+            "user_mtime": "2023-11-27T19:48:32Z"
+        },
+        {
+            "create_time": "2023-11-27T19:48:32Z",
+            "created_by": "automaton",
+            "file_uri": "https://digital.archives.caltech.edu/islandora/object/maccready:50761/datastream/TN/view",
+            "identifier": "506780",
+            "is_representative": false,
+            "jsonmodel_type": "file_version",
+            "last_modified_by": "automaton",
+            "lock_version": 0,
+            "publish": false,
+            "system_mtime": "2023-11-27T19:48:32Z",
+            "use_statement": "URL-Redirected",
+            "user_mtime": "2023-11-27T19:48:32Z",
+            "xlink_show_attribute": "embed"
+        },
+        {
+            "create_time": "2023-11-27T19:48:32Z",
+            "created_by": "automaton",
+            "file_uri": "https://digital.archives.caltech.edu/islandora/object/maccready:50761",
+            "identifier": "506781",
+            "is_representative": false,
+            "jsonmodel_type": "file_version",
+            "last_modified_by": "automaton",
+            "lock_version": 0,
+            "publish": false,
+            "system_mtime": "2023-11-27T19:48:32Z",
+            "use_statement": "URL-Redirected",
+            "user_mtime": "2023-11-27T19:48:32Z"
+        },
+        {
+            "create_time": "2023-11-27T19:48:32Z",
+            "created_by": "automaton",
+            "file_uri": "http://maccready.library.caltech.edu/islandora/object/pbm:2307/datastream/TN/view",
+            "identifier": "506782",
+            "is_representative": false,
+            "jsonmodel_type": "file_version",
+            "last_modified_by": "automaton",
+            "lock_version": 0,
+            "publish": false,
+            "system_mtime": "2023-11-27T19:48:32Z",
+            "use_statement": "URL-Redirected",
+            "user_mtime": "2023-11-27T19:48:32Z",
+            "xlink_show_attribute": "embed"
+        },
+        {
+            "create_time": "2023-11-27T19:48:32Z",
+            "created_by": "automaton",
+            "file_uri": "http://maccready.library.caltech.edu/islandora/object/pbm:2307",
+            "identifier": "506783",
+            "is_representative": false,
+            "jsonmodel_type": "file_version",
+            "last_modified_by": "automaton",
+            "lock_version": 0,
+            "publish": false,
+            "system_mtime": "2023-11-27T19:48:32Z",
+            "use_statement": "URL-Redirected",
+            "user_mtime": "2023-11-27T19:48:32Z"
+        }
+    ],
+    "is_slug_auto": true,
+    "jsonmodel_type": "digital_object",
+    "lang_materials": [],
+    "last_modified_by": "automaton",
+    "linked_agents": [],
+    "linked_events": [],
+    "linked_instances": [
+        {
+            "ref": "/repositories/2/archival_objects/74627"
+        }
+    ],
+    "lock_version": 8,
+    "metadata_rights_declarations": [],
+    "notes": [],
+    "publish": true,
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "representative_file_version": {
+        "caption": "Black notebook no. 1, October 1961-March 1962",
+        "create_time": "2023-11-27T19:48:32Z",
+        "created_by": "automaton",
+        "file_uri": "https://img.archives.caltech.edu/iiif/2/collections/MacCreadyPB/MacCreadyPB_03_00_001_01/MacCreadyPB_03_00_001_01_0001/full/200,/0/default.webp",
+        "identifier": "506778",
+        "is_representative": true,
+        "jsonmodel_type": "file_version",
+        "last_modified_by": "automaton",
+        "link_uri": "https://digital.archives.caltech.edu/collections/MacCreadyPB/MacCreadyPB_03_00_001_01",
+        "lock_version": 0,
+        "publish": true,
+        "system_mtime": "2023-11-27T19:48:32Z",
+        "use_statement": "image-thumbnail",
+        "user_mtime": "2023-11-27T19:48:32Z",
+        "xlink_show_attribute": "embed"
+    },
+    "restrictions": false,
+    "rights_statements": [],
+    "subjects": [],
+    "suppressed": false,
+    "system_mtime": "2023-11-27T19:48:32Z",
+    "title": "Black notebook no. 1, October 1961-March 1962",
+    "tree": {
+        "ref": "/repositories/2/digital_objects/8889/tree"
+    },
+    "uri": "/repositories/2/digital_objects/8889",
+    "user_mtime": "2023-11-27T19:48:32Z"
+}

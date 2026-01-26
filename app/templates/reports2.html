@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>CSV Download</h3>
+
+<p>{{ rec_count }} {{ category }} written to {{ filename }}</p>
+
+<form action="{{ url_for('oaidp.download', filename=filename) }}">
+
+    <button type="submit">Download CSV</button>
+
+</form>
+
+<p><a href="{{ url_for('oaidp.reports') }}">Return</a></p>
+
+{% endblock %}

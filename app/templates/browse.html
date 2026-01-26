@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>Browse</h3>
+
+<p>Browse the harvester by Archival Object ID, with links to the ArchivesSpace 
+    record and to the Data Provider OAI record.
+    The ID returned is the numerical part of the full identifier (e.g. 
+    'collections.archives.caltech.edu/repositories/2/archival_objects/107520')
+</p>
+
+<p>
+    <strong>Page {{ page_number }} of {{ pages_total }},
+        Items {{ ((page_number - 1) * page_size) + 1 }}-{% if page_number==pages_total %}{{ items_total }}{% else %}{{ page_number * page_size }}{% endif %}
+        of {{ items_total }}</strong>
+</p>
+
+<p><strong>Jump to:</strong>
+    {% for i in range(pages_total) %}
+        {% if i == page_number-1 %}
+            {{ page_number }}
+        {% else %}
+            <a href="{{ url_for('oaidp.browse', page_number=i+1) }}">{{ i+1 }}</a>
+        {% endif %}
+        {% if i != pages_total-1 %}
+            |
+        {% endif %}
+    {% endfor %}
+</p>
+
+<table>
+    {% for id in ids %}
+    <tr>
+        <td><strong>{{ loop.index + ((page_number - 1) * page_size) }}.</strong></td>
+        <td>{{ id }}</td>
+        <td>[<a href="https://{{ idbase }}{{ id }}">aspace</a>]</td>
+        <td>[<a href="{{ dpurl }}?verb=GetRecord&identifier={{ idbase }}{{ id}}">oai</a>]</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

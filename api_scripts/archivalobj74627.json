@@ -1,0 +1,111 @@
+{
+    "accession_links": [],
+    "ancestors": [
+        {
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/74591"
+        },
+        {
+            "level": "collection",
+            "ref": "/repositories/2/resources/197"
+        }
+    ],
+    "component_id": "MacCreadyPB_03_00_001_01",
+    "create_time": "2020-06-09T05:02:55Z",
+    "created_by": "tkeswick",
+    "dates": [
+        {
+            "begin": "1961-10",
+            "calendar": "gregorian",
+            "create_time": "2020-06-23T21:11:54Z",
+            "created_by": "tkeswick",
+            "date_type": "inclusive",
+            "end": "1962-03",
+            "era": "ce",
+            "expression": "October 1961-March 1962",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "tkeswick",
+            "lock_version": 0,
+            "system_mtime": "2020-06-23T21:11:54Z",
+            "user_mtime": "2020-06-23T21:11:54Z"
+        }
+    ],
+    "display_string": "Black notebook no. 1, October 1961-March 1962",
+    "extents": [],
+    "external_documents": [],
+    "external_ids": [],
+    "has_unpublished_ancestor": false,
+    "import_previous_arks": [],
+    "instances": [
+        {
+            "create_time": "2020-06-23T21:11:54Z",
+            "created_by": "tkeswick",
+            "instance_type": "mixed_materials",
+            "is_representative": false,
+            "jsonmodel_type": "instance",
+            "last_modified_by": "tkeswick",
+            "lock_version": 0,
+            "sub_container": {
+                "create_time": "2020-06-23T21:11:54Z",
+                "created_by": "tkeswick",
+                "indicator_2": "1",
+                "jsonmodel_type": "sub_container",
+                "last_modified_by": "tkeswick",
+                "lock_version": 0,
+                "system_mtime": "2020-06-23T21:11:54Z",
+                "top_container": {
+                    "ref": "/repositories/2/top_containers/7490"
+                },
+                "type_2": "folder",
+                "user_mtime": "2020-06-23T21:11:54Z"
+            },
+            "system_mtime": "2020-06-23T21:11:54Z",
+            "user_mtime": "2020-06-23T21:11:54Z"
+        },
+        {
+            "create_time": "2020-06-23T21:11:54Z",
+            "created_by": "tkeswick",
+            "digital_object": {
+                "ref": "/repositories/2/digital_objects/8889"
+            },
+            "instance_type": "digital_object",
+            "is_representative": false,
+            "jsonmodel_type": "instance",
+            "last_modified_by": "tkeswick",
+            "lock_version": 0,
+            "system_mtime": "2020-06-23T21:11:54Z",
+            "user_mtime": "2020-06-23T21:11:54Z"
+        }
+    ],
+    "is_slug_auto": true,
+    "jsonmodel_type": "archival_object",
+    "lang_materials": [],
+    "last_modified_by": "tkeswick",
+    "level": "file",
+    "linked_agents": [],
+    "linked_events": [],
+    "lock_version": 2,
+    "notes": [],
+    "parent": {
+        "ref": "/repositories/2/archival_objects/74591"
+    },
+    "position": 0,
+    "publish": true,
+    "ref_id": "id267445",
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "repository_processing_note": "deprecated_id:PBM_3_1_1",
+    "resource": {
+        "ref": "/repositories/2/resources/197"
+    },
+    "restrictions_apply": false,
+    "rights_statements": [],
+    "subjects": [],
+    "suppressed": false,
+    "system_mtime": "2023-11-27T19:48:32Z",
+    "title": "Black notebook no. 1",
+    "uri": "/repositories/2/archival_objects/74627",
+    "user_mtime": "2020-06-23T21:11:54Z"
+}

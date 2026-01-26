@@ -1,0 +1,101 @@
+<?xml version="1.0" ?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+  <Identify>
+    <repositoryName>Caltech Archives Digital Collections</repositoryName>
+    <baseURL>http://apps.library.caltech.edu/ead2dc/oai</baseURL>
+    <protocolVersion>2.0</protocolVersion>
+    <adminEmail>archives@caltech.edu</adminEmail>
+    <earliestDatestamp>2026-01-07</earliestDatestamp>
+    <deletedRecord>no</deletedRecord>
+    <granularity>YYYY-MM-DD</granularity>
+  </Identify>
+  <ListMetadataFormats>
+    <metadataFormat>
+      <metadataPrefix>oai_dc</metadataPrefix>
+      <schema>http://www.openarchives.org/OAI/2.0/oai_dc.xsd</schema>
+      <metadataNamespace>http://www.openarchives.org/OAI/2.0/oai_dc/</metadataNamespace>
+    </metadataFormat>
+  </ListMetadataFormats>
+  <ListSets>
+    <set>
+      <setSpec>resource_30</setSpec>
+      <setName>Caltech Oral History Interviews</setName>
+      <setDescription>
+        <oai_dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:description/>
+        </oai_dc>
+      </setDescription>
+    </set>
+    <set>
+      <setSpec>accession_5058</setSpec>
+      <setName>Paul B. MacCready Papers ca. 1931-2002</setName>
+      <setDescription>
+        <oai_dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:description/>
+        </oai_dc>
+      </setDescription>
+    </set>
+  </ListSets>
+  <ListRecords metadataPrefix="oai_dc">
+    <record>
+      <header>
+        <identifier>collections.archives.caltech.edu/repositories/2/archival_objects/104134</identifier>
+        <datestamp>2025-04-23</datestamp>
+        <setSpec>resource_30</setSpec>
+      </header>
+      <metadata>
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/">
+          <dc:title>Sidney Weinbaum Oral History Interview</dc:title>
+          <dc:creator>Weinbaum, Sidney (Physicist), interviewee</dc:creator>
+          <dc:creator>Terrall, Mary, interviewer</dc:creator>
+          <dc:subject source="lcsh">Physics</dc:subject>
+          <dc:description>An interview in August 1985 with Sidney Weinbaum, Caltech PhD (1933), a mathematician who was a research fellow in Linus Pauling’s laboratory in the Division of Chemistry and Chemical Engineering in the 1930s and worked from 1946 to 1949 with Pol Duwez at the Jet Propulsion Laboratory.  In 1950, Weinbaum was arrested for perjury (regarding his alleged membership in the Communist Party) and for “abetting” Party activities.  He was convicted and sentenced to four years in prison.  In this interview, he recalls his childhood in the Ukraine; his undergraduate years at Caltech (1922-1924); and his work for Pauling.  He recalls various friends in the Caltech community, his interests in chess and music, his political activism.  He discusses his war work for Bendix Aviation and Curtiss-Wright Research Laboratory; his return to Pasadena after the war to work for JPL; his interrogation by the FBI; his arrest and trial; the support or lack of it from various friends and Caltech faculty; his life in prison; and his release and subsequent happy life with his second wife, Betty.</dc:description>
+          <dc:identifier scheme="URI" type="Web-Access">http://resolver.caltech.edu/CaltechOH:OH_Weinbaum_S</dc:identifier>
+          <dc:identifier scheme="URI" type="image-thumbnail">https://digital.archives.caltech.edu/collections/OralHistories/OH_Weinbaum_S/thumbnail.webp</dc:identifier>
+          <dc:identifier type="localid">OH_Weinbaum_S</dc:identifier>
+          <dc:date begin="1985-08-15" end="1985-08-22" type="inclusive" label="creation">1985-08-15 - 1985-08-22</dc:date>
+          <dc:type>other</dc:type>
+          <dc:format>1 unspecified containers MEDIUM: Paper; FORMAT: Book; LENGTH: 74 pages; QUANTITY: 1</dc:format>
+          <dc:format>1 unspecified containers MEDIUM: Sound recording; FORMAT: Sound cassette: analog; QUANTITY: 1 set (3 cassettes per set)</dc:format>
+          <dc:relation level="series">Uncategorized Interviews</dc:relation>
+          <dc:relation level="collection">Caltech Oral History Interviews</dc:relation>
+          <dc:rights>The copyright and related rights status of this Item has not been evaluated. Please contact Caltech Archives and Special Collections for more information. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use.</dc:rights>
+        </oai_dc:dc>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>collections.archives.caltech.edu/repositories/2/archival_objects/103708</identifier>
+        <datestamp>2024-12-23</datestamp>
+        <setSpec>resource_30</setSpec>
+      </header>
+      <metadata>
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/">
+          <dc:title>James Bonner, Sterling Emerson, Norman Horowitz, and Donald Poulson Oral History Interview on Biology</dc:title>
+          <dc:creator>Bonner, James F., 1910-1996 (Molecular Biologist), interviewee</dc:creator>
+          <dc:creator>Emerson, Sterling Howard (Geneticist), interviewee</dc:creator>
+          <dc:creator>Horowitz, Norman H. (Norman Harold), 1915-2005 (Biologist), interviewee</dc:creator>
+          <dc:creator>Poulson, Donald Frederick (Biologist), interviewee</dc:creator>
+          <dc:creator>Goodstein, Judith R., interviewer</dc:creator>
+          <dc:creator>Lyle, Harriett, interviewer</dc:creator>
+          <dc:creator>Terrall, Mary, interviewer</dc:creator>
+          <dc:subject source="lcsh">Biology</dc:subject>
+          <dc:subject source="lcsh">Genetics</dc:subject>
+          <dc:subject source="local">Associates</dc:subject>
+          <dc:description>In this 1978 informal conversation, the participants recall the early days of biology at Caltech under its first chairman, Thomas Hunt Morgan, including recollections of Theodosius Dobzhansky. Poulson, a professor of biology at Yale, and Caltech professor of biology Bonner describe their undergraduate and graduate education at Caltech in the early 1930s in chemistry, biology, and physics, including a botany course taught by Emerson, professor of biology emeritus. Memories of plant physiologist Herman Dolk, killed in an auto accident in 1932, and the early humanities faculty, including Clinton Judy, Harvey Eagleson, and William B. Munro. Re-creation of Columbia fly room at Caltech with Alfred H. Sturtevant and Dobzhansky; their collaboration on Drosophila pseudoobscura and their later disagreement. Bonner's work on plant physiology with Kenneth Thimann and H. Dolk. Norman Horowitz, chairman of the Biology Division, recalls arriving at Caltech as a graduate student in the late 1930s and being assigned by Morgan to work with embryologist Albert Tyler. Recalls visits to Caltech's marine biological station at Corona del Mar and NRC fellowship to Stanford, where he first met George W. Beadle. Bonner and Horowitz comment on the direction of Caltech's Biology Division in the 1930s--all experiment, no descriptive biology, and an emphasis on genetics rare among universities at that time. Comments on collaboration with chemists, including Linus Pauling. Reenergizing of the Biology Division in the late 1940s with the return of Beadle, Horowitz, Edward B. Lewis, and Max Delbrück. Beadle becomes chairman of the division; contrast between his and Morgan's style of leadership. Growth of Biology Division under Beadle.</dc:description>
+          <dc:identifier scheme="URI" type="Web-Access">http://resolver.caltech.edu/CaltechOH:OH_Joint_Biology</dc:identifier>
+          <dc:identifier scheme="URI" type="image-thumbnail">https://digital.archives.caltech.edu/collections/OralHistories/OH_Joint_Biology/thumbnail.webp</dc:identifier>
+          <dc:identifier type="localid">OH_Joint_Biology</dc:identifier>
+          <dc:date begin="1978-11-06" type="single" label="creation">1978-11-06</dc:date>
+          <dc:type>other</dc:type>
+          <dc:format>1 unspecified containers MEDIUM: Paper; FORMAT: Book; LENGTH: 42 pages; QUANTITY: 1</dc:format>
+          <dc:format>1 unspecified containers MEDIUM: Sound recording; FORMAT: Sound cassette: analog; QUANTITY: 1 set (2 cassettes per set)</dc:format>
+          <dc:relation level="subseries">Division of Biology and Biological Engineering Faculty Interviews</dc:relation>
+          <dc:relation level="series">Faculty Interviews</dc:relation>
+          <dc:relation level="collection">Caltech Oral History Interviews</dc:relation>
+          <dc:rights>The copyright and related rights status of this Item has not been evaluated. Please contact Caltech Archives and Special Collections for more information. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use.</dc:rights>
+        </oai_dc:dc>
+      </metadata>
+    </record>
+  </ListRecords>
+</OAI-PMH>

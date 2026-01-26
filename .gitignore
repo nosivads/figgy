@@ -1,0 +1,17 @@
+*.__pycache__
+.venv/*
+.graphics/*
+.github/*
+.archivesnake.yml
+instance/*
+auth/*
+json/*
+app/config.json
+__pycache__/*
+app/__pycache__/*
+api_scripts/secrets.py
+secrets.py
+devnotes.txt
+test.py
+testsnake.py
+test.py

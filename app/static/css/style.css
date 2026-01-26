@@ -1,0 +1,285 @@
+body {
+    font-family: Hind,
+        sans-serif, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global focus styles for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+    outline: 3px solid rgba(244, 93, 44, 0.25);
+    outline-offset: 2px;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+.site-header {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.site-branding {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#logo {
+    width: 460px;
+    flex-shrink: 0;
+    overflow: visible;
+}
+
+/* SVG logo styling */
+#logo rect {
+    fill: transparent;
+    stroke: transparent;
+    transition: fill 0.2s ease, stroke 0.2s ease;
+}
+
+#logo a:hover > rect {
+    fill: rgba(244, 93, 44, 0.25);
+}
+
+#logo a:focus-visible > rect {
+    stroke: rgba(244, 93, 44, 0.25);
+    stroke-width: 3px;
+}
+
+#logo a {
+    outline: none;
+}
+
+#logo .caltech-logotype {
+    fill: #FF6C0C;
+    transition: fill 0.2s ease;
+}
+
+#logo a:first-of-type:hover > .caltech-logotype {
+    fill: #000000;
+}
+
+#logo path:not(.caltech-logotype) {
+    fill: #000000; 
+}
+
+a:link {
+    text-decoration-style: dotted;
+}
+
+ul, ol {
+    line-height: 2;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    border-color: #96D4D4;
+    border-style: dotted;
+}
+
+tr:nth-child(even) {
+    background-color: #F2F3F4;
+}
+
+tr:nth-child(odd) {
+    background-color: #E5E8E8;
+}
+
+.sidenav {
+    border: 1px solid black;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 20px;
+    background: #F2F3F4;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #2196F3;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #064579;
+}
+
+.main {
+    padding: 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Utility navigation */
+.utility-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    margin-left: auto;
+}
+
+.utility-nav a {
+    text-decoration: none;
+    color: rgb(189, 60, 19);
+}
+
+.utility-nav a:hover {
+    color: rgb(189, 60, 19);
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+    .site-branding {
+        padding: 20px 40px;
+    }
+
+    .utility-nav {
+        width: 100%;
+        margin-left: 0;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .site-branding {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    #logo {
+        width: 100%;
+        max-width: 460px;
+    }
+
+    .utility-nav {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* Primary navigation */
+.primary-nav {
+    max-width: 1200px;
+    margin-bottom: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #EFEFF3;
+    padding: 5px 2px;
+}
+
+.primary-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+.primary-nav li {
+    display: inline;
+    margin-right: 1em;
+}
+
+.primary-nav li:last-child {
+    margin-right: 0;
+}
+
+.primary-nav a {
+    text-decoration: none;
+    color: rgb(189, 60, 19);
+}
+
+.primary-nav a:hover {
+    color: rgb(189, 60, 19);
+    text-decoration: underline;
+}
+
+/* Site title */
+.site-title {
+    margin: 20px auto;
+    font-size: 42px;
+    font-weight: 700;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.heading a {
+    text-decoration: none;
+    color: #2196F3;
+}
+
+.main a:hover {
+    color: #064579;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+div#loading {
+    width: 35px;
+    height: 35px;
+    display: none;
+    background: url(/static/download.png) no-repeat;
+    cursor: wait;
+}
+
+div.absolute {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
