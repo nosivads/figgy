@@ -1,4 +1,4 @@
-# An OAI Static Repository and Data Provider for ArchivesSpace
+# figgy: An Experimental Space
 
 There are two components to this service:
 
